@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style class="text/css">
+        .red {
+            width: 25%;
+            height: 200px;
+            border: 20px solid rgb(255, 255, 255);
+            background-color: rgb(157, 8, 8);
+            padding: 6px;
+           
+
+        }
+
+        .green {
+            width: 25%;
+            height: 200px;
+            border: 20px solid rgb(255, 255, 255);
+            background-color: rgb(25, 157, 8);
+            padding: 6px;
+
+        }
+
+        .blue{
+            width: 25%;
+            height: 200px;
+            border: 20px solid rgb(255, 255, 255);
+            background-color: rgb(8, 28, 157);
+            padding: 6px;
+        }
+
+        button {
+            width: 32%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body id="b">
+    <div class="red">
+        <h1>Red</h1>
+        <h1 id="h1"></h1>
+
+        <button id="b1">+</button>
+        <button id="b2">-</button>
+        <button id="b3">reset</button>
+    </div>
+
+    <div class="green">
+        <h1>Green</h1>
+        <h1 id="h2"></h1>
+
+        <button id="g1">+</button>
+        <button id="g2">-</button>
+        <button id="g3">reset</button>
+    </div>
+
+    <div class="blue">
+        <h1>Blue</h1>
+        <h1 id="h3"></h1>
+
+        <button id="bl1">+</button>
+        <button id="bl2">-</button>
+        <button id="bl3">reset</button>
+    </div>
+
+
+
+    <script>
+        let myb=document.getElementById('b');
+
+        let count = 0;
+        document.getElementById('b1').onclick = function () {
+            count += 1;
+            if(count<=255){
+                document.getElementById('h1').innerHTML = count;
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+           
+        };
+
+        document.getElementById('b2').onclick = function () {
+            count-=1;
+            if(count>-1){
+                document.getElementById('h1').innerHTML=count;
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+            
+
+        };
+
+        document.getElementById('b3').onclick = function () {
+            count=0;
+            document.getElementById('h1').innerHTML=count1;
+
+
+            x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+
+        };
+
+
+
+        let count1 = 0;
+        document.getElementById('g1').onclick = function () {
+            count1 += 1;
+            if(count1<=255){
+                document.getElementById('h2').innerHTML = count1;
+
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+           
+        };
+
+        document.getElementById('g2').onclick = function () {
+            count1-=1;
+            if(count1>-1){
+                document.getElementById('h2').innerHTML=count1;
+
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+            
+
+        };
+
+        document.getElementById('g3').onclick = function () {
+            count1=0;
+            document.getElementById('h2').innerHTML=count1;
+
+
+            x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+
+        };
+
+
+        let count3 = 0;
+        document.getElementById('bl1').onclick = function () {
+            count3 += 1;
+            if(count3<=255){
+                document.getElementById('h3').innerHTML = count3;
+
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+           
+        };
+
+        document.getElementById('bl2').onclick = function () {
+            count3-=1;
+            if(count3>-1){
+                document.getElementById('h3').innerHTML=count3;
+
+
+                x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+            }
+            
+
+        };
+
+        document.getElementById('bl3').onclick = function () {
+            count3=0;
+            document.getElementById('h3').innerHTML=count3;
+
+
+
+            x=document.getElementById('h1').innerHTML;
+                y=document.getElementById('h2').innerHTML;
+                z=document.getElementById('h3').innerHTML;
+                x=Number(x);
+                y=Number(y);
+                z=Number(z);
+
+                myb.style.background="rgb("+x+","+y+","+z+")"
+
+        };
+
+
+    </script>
+
+
+
+</body>
+
+</html>
